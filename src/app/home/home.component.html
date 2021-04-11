@@ -1,0 +1,53 @@
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navigation">
+      <div class="container">
+        <a href="#main-slider">
+          <img id="headerLogo" class="endlessLogo" src="../../assets/img/logo-endless.svg"/>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+<section id="main-slider">
+  <div class="carousel slide">
+      <div id="mainHeroImg" class="item active" style="background-image: url(../../assets/img/photo-couch-min.jpg)">
+        <div id="innerContainer" class="container">
+          <div class="row slide-margin">
+            <div class="col-sm-6">
+              <div class="carousel-content">
+                <p class="subTopText">New Games & Accessories</p>
+                <span class="headerText">Monthly Packages.</span>
+                <div class="headerTextSpace"></div>
+                <span class="headerText">Excitement delivered daily.</span>
+                <p class="subText">
+                  What's the best way to shop for the latest video games and
+                  peripherals? How about never shopping at all? You'll get new
+                  stuff on your doorstep &#8212; every month.
+                </p>
+                <a [ngStyle]="{'background-color': onHover ? '#006768' : '#5ae6bb','color':  onHover ? '#d1d1d1' : '#1f1f1f'}" 
+                (mouseover)="toggleOnHover()" (mouseout)="toggleOnHover()"
+                id="getStarted" class="btn-slide" href="#howItWorks">GET STARTED</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<footer class="features_container">
+  <div class="text-center" >
+    <h1 id="howItWorks">How It Works</h1>
+    <div class="card_container">
+      <div class="card" *ngFor="let feature of features">
+        <div class="card-section">
+          <p class="numberListing">{{ feature.stepNumber }}</p>
+          <div *ngFor="let content of feature.versionContent"> 
+            <p class="contentTitle">{{ content.title.toUpperCase() }}</p>
+            <p class="contentBody">{{ content.body }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

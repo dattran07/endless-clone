@@ -1,0 +1,112 @@
+#mainHeroImg {
+  height: 800px !important;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+ .endlessLogo {
+  height: 26px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-left: 48px;
+  width: 30%;
+  filter: invert(82%) sepia(99%) saturate(2476%) hue-rotate(84deg) brightness(96%) contrast(119%);
+ } 
+
+.subTopText {
+ font-size: 18px;
+ color: #fff;
+}
+
+.navigation  {
+	background-color:#1f1f1f;
+  padding:0;
+  height: 55px;
+}
+
+#main-slider .carousel .carousel-content {
+  margin-top: 300px;
+  width: 450px;
+}
+
+.headerText {
+  color: #fff;
+  font-size:50px;
+  font-weight:100;
+  width: max-content;
+  display: inline-block;
+}
+
+.subText {
+  color: #ddd;
+  font-size:18px;
+  margin-top: 30px;
+}
+
+.btn-slide {
+  padding: 8px 20px;
+  background: #5ae6bb;
+  color: #000;
+  border-radius: 100px;
+  margin-top: 25px;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
+
+#getStarted {
+  font-weight: 600;
+}
+
+.features_container {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#howItWorks, p.contentBody, p.contentTitle{
+  font-family: Lato;
+}
+
+#howItWorks {
+  color: #000;
+  text-decoration: none;
+  font-size: 30px;
+  padding-top: 50px;
+  margin-bottom: 0px;
+}
+
+.card_container {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .card_container {
+    display: inline !important;
+  }
+}
+
+.numberListing {
+  font-size: 5em;
+  color: #000;
+  padding-bottom: 10px;
+}
+
+.numberListing:after {
+  content: ""; 
+  display: block; 
+  margin: 0 auto; 
+  width: 38%; 
+  padding-top: 5px; 
+  border-bottom: 4px solid #5ae6bb; 
+}
+
+.contentTitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card {
+  border: none !important;
+}
