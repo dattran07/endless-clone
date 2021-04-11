@@ -75,7 +75,7 @@ const testData: Feature[] = [
   },
 ]
 
-const sortAndRemoveContentVersion = (content: VersionContent[]) => {
+const sortAndRemoveVersionContent = (content: VersionContent[]) => {
   if(content.length > 1) {
     content.sort((a, b) => new Date(a.effectiveDate).getTime() - new Date(b.effectiveDate).getTime());
     return content.splice(0, content.length - 1);
@@ -109,7 +109,7 @@ describe('HomeService', () => {
 
       
       for(let i = 1; i < 3; i++) {
-        sortAndRemoveContentVersion(features[i].versionContent);
+        sortAndRemoveVersionContent(features[i].versionContent);
       }
       expect(features[1].versionContent.length).toEqual(1);
       expect(features[1].versionContent[0].title).toEqual("Request A Delivery");

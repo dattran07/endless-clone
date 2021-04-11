@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     return "0" + stepNumber;
   }
 
-  sortAndRemoveContentVersion(content: VersionContent[]) {
+  sortAndRemoveVersionContent(content: VersionContent[]) {
     if(content.length > 1) {
       content.sort((a, b) => new Date(a.effectiveDate).getTime() - new Date(b.effectiveDate).getTime());
       return content.splice(0, content.length - 1);
@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
         
         for(let i = 0; i < this.features.length; i++) {
           this.features[i].stepNumber = this.appendLeadingZero(this.features[i].stepNumber);
-          this.sortAndRemoveContentVersion(this.features[i].versionContent);
+          this.sortAndRemoveVersionContent(this.features[i].versionContent);
         }
       }
     );
